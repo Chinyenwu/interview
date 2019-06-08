@@ -24,7 +24,7 @@ def parse_article_meta(entry):
         'author': entry.find('div.author', first=True).text,
         'title': entry.find('div.title', first=True).text,
         'push': entry.find('div.nrec', first=True).text,
-		'link': "https://www.ptt.cc"+entry.find('div.title > a', first=True).attrs['href'],
+		#'link': "https://www.ptt.cc"+entry.find('div.title > a', first=True).attrs['href'],
     }
 
 def parse_article_metab(entry):
